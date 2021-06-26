@@ -1,0 +1,22 @@
+#+title: CarbAI
+#+author: Matt, Paul, Justin
+#+options: num:nil toc:nil timestamp:nil
+# #+options: reveal_single_file:t
+#+reveal_root: ./reveal.js
+#+reveal_theme: blood
+#+reveal_extra_css: ./custom.css
+
+* Premise
+- Computation of carbon emissions for companies is expensive and
+  discourages them from not only calculating it but acting on the
+  information the results provide
+- Environmental agencies restrict access to emission data behind
+  paywall and licensing issues, creating barriers for those looking to
+  gain insight and help the industry
+** [[./photos/2021-06-26-164320_1208x881_scrot.png]]
+* Concept
+- Deliver AI backed analytics to businesses of any size to improve their
+  carbon footprint
+- Utilize external data in addition to creating new data from client
+  base to improve predictions and recommendations
+
