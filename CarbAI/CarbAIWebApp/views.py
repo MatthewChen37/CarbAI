@@ -1,8 +1,14 @@
 from django.shortcuts import render
-
+from django.views.generic import TemplateView
 # Create your views here.
 from django.http import HttpResponse
+from django.template import loader
 
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+class HomePageView(TemplateView):
+    template_name = 'CarbAIWebApp/index.html'
+
+class LoginPageView(TemplateView):
+    template_name = 'CarbAIWebApp/login.html'
+
+

@@ -1,7 +1,9 @@
-from django.urls import path
+from django.urls import path, include
 
-from . import views
+from .views import HomePageView, LoginPageView
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', HomePageView.as_view(), name='home'),
+    path('login', LoginPageView.as_view(), name='login')
+
 ]
