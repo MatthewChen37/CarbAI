@@ -1,22 +1,45 @@
-#+title: CarbAI
-#+author: Matt, Paul, Justin
+#+title: CARB・AI
+#+options: author:nil
 #+options: num:nil toc:nil timestamp:nil
-# #+options: reveal_single_file:t
+#+options: reveal_single_file:t
+#+reveal_navigationMode: default
 #+reveal_root: ./reveal.js
-#+reveal_theme: blood
+#+reveal_theme: sky
 #+reveal_extra_css: ./custom.css
 
 * Premise
-- Computation of carbon emissions for companies is expensive and
-  discourages them from not only calculating it but acting on the
-  information the results provide
+- Calculating carbon emissions is expensive and time-consuming, a
+  headache for large companies and a nightmare for smaller ones
 - Environmental agencies restrict access to emission data behind
-  paywall and licensing issues, creating barriers for those looking to
-  gain insight and help the industry
+  paywalls and licensing agreements, creating barriers for those
+  looking to learn about and reduce their carbon footprint
 ** [[./photos/2021-06-26-164320_1208x881_scrot.png]]
+** 
+Data is difficult to procure across multiple companies and industries,
+making accountability difficult as relative comparisons are hard to
+make
+** 
+Companies generally only report their final tonnage of Scope 1, 2, and
+3 emissions. Such data, which lack the inclusion of the calculating
+variables used in the EPAs reporting guidelines, only give a vague
+idea of the factors that affect emissions and what may be done about
+them
 * Concept
 - Deliver AI backed analytics to businesses of any size to improve their
   carbon footprint
-- Utilize external data in addition to creating new data from client
-  base to improve predictions and recommendations
-
+- Utilize external data in addition to creating new data from clients
+  and users to improve predictions and recommendations
+- Share knowledge base to help inform consumer decisions, hold
+  industry accountable and move towards a healthier planet
+** 
+- Publicly and for-sale data will be aggregated to let businesses
+  and consumers better evaluate and judge the companies they interact with
+- Trained web-scrappers help find company specific data, folding it
+  into averages for industry and region, along with the company's own
+  portfolio
+** 
+- CARB・AI will expand its initial models over time using new data and
+  input. Such models will be continually evaluated against the existing
+  scientific literature to either further support or potentialy
+  improve existing methods of estimating carbon emissions
+* End
