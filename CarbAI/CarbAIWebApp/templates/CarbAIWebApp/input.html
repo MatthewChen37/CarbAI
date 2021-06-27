@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Data Input Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+</head>
+
+
+
+<body>
+    {% extends 'CarbAIWebApp/base.html' %}
+    {% block content %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        <div class="fieldWrapper">
+            {{ form.daily_screen_time.errors }}
+            <label for="{{ form.daily_screen_time.id_for_label }}">Your daily screen time:</label>
+            {{ form.daily_screen_time }}
+        </div>
+        <div class="fieldWrapper">
+            {{ form.commute_distance.errors }}
+            <label for="{{ form.commute_distance.id_for_label }}">Your commute distance (in miles):</label>
+            {{ form.commute_distance }}
+        </div>
+        <div class="fieldWrapper">
+            {{ form.breakfast_food.errors }}
+            <label for="{{ form.breakfast_food.id_for_label }}">What did you have for breakfast?</label>
+            {{ form.breakfast_food }}
+        </div>
+        <div class="fieldWrapper">
+                {{ form.lunch_food.errors }}
+                <label for="{{ form.lunch_food.id_for_label }}">What did you have for lunch?</label>
+                {{ form.lunch_food }}
+            </div>
+        <div class="fieldWrapper">
+                {{ form.dinner_food.errors }}
+                <label for="{{ form.dinner_food.id_for_label }}">What did you have for dinner?</label>
+                {{ form.dinner_food }}
+            </div>   
+        <div class="fieldWrapper">
+                {{ form.snack_food.errors }}
+                <label for="{{ form.snack_food.id_for_label }}">Did you have a snack? </label>
+                {{ form.snack_food }}
+            </div> 
+        <div class="fieldWrapper">
+                {{ form.did_you_recycle_aluminum_today.errors }}
+                <label for="{{ form.did_you_recycle_aluminum_today.id_for_label }}">Did you recycle aluminum today?</label>
+                {{ form.did_you_recycle_aluminum_today }}
+            </div>
+        <div class="fieldWrapper">
+                {{ form.did_you_recycle_plastic_today.errors }}
+                <label for="{{ form.did_you_recycle_plastic_today.id_for_label }}">Did you recycle plastic today?</label>
+                {{ form.did_you_recycle_plastic_today }}
+            </div>
+        <div class="fieldWrapper">
+            {{ form.did_you_recycle_glass_today.errors }}
+            <label for="{{ form.did_you_recycle_glass_today.id_for_label }}">Did you recycle glass today?</label>
+            {{ form.did_you_recycle_glass_today }}
+        </div>
+        <input type="submit" value="Submit">
+
+    </form>
+
+    
+    {% endblock content %}
+</body>
+
+</html>
